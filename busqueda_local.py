@@ -23,7 +23,8 @@ def evaluar_indice(coords: tuple) -> float:
         Valor del índice en la coordenada dada.
     """
     x, y = coords
-    return 100 * (x**2 + y - 11)**2 + 100 * (x + y**2 - 7)**2
+    return 100 * (x**2 + y - 11)**2 + 100 * (x + y**2 - 7)**2 + 1000
+
 
 
 from math import cos, pi, sin
@@ -101,9 +102,8 @@ def evaluar_factibilidad(coor: tuple) -> bool:
         x <= 3 and
         y >= -3 and
         y <= 3 and
-        x + y >= -3
-        x - y < 0
-    )
+        x + y >= -3 and
+        x - y < 0)
 
 
 
