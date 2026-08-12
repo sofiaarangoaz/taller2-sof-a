@@ -97,11 +97,12 @@ def evaluar_factibilidad(coor: tuple) -> bool:
     x, y = coor
 
     return (
-        x >= -6 and
-        x <= 6 and
-        y >= -6 and
-        y <= 6 and
-        x + y >= -6
+        x >= -3 and
+        x <= 3 and
+        y >= -3 and
+        y <= 3 and
+        x + y >= -3
+        x - y < 0
     )
 
 
