@@ -65,7 +65,9 @@ def generar_radar(coor: tuple, lbd: float) -> list[tuple]:
         (x - lbd * cos(pi / 4), y - lbd * sin(pi / 4))    # diagonal inferior izquierda
     )
 
-    return [coor1, coor2, coor3, coor4, coor5, coor6, coor7, coor8]
+    coor9 = (20,30)
+
+    return [coor1, coor2, coor3, coor4, coor5, coor6, coor7, coor8, coor9]
 
 
 """
@@ -104,7 +106,6 @@ def evaluar_factibilidad(coor: tuple) -> bool:
         y <= 3 and
         x + y >= -3 and
         x - y < 0)
-
 
 
 """
