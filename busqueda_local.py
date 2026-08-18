@@ -3,14 +3,14 @@
 Implemente una función en Python llamada evaluar_indice que reciba como parámetro una tupla con una coordenada (x,y) 
 y retorne el valor del índice ϕ para dicha coordenada. 
 """
-
+#Modificacion de JJ - Cambiar la función 
 def evaluar_indice(coords: tuple) -> float:
     """
     Calcula el valor del índice para una coordenada (x, y).
 
     Fórmula:
     --------
-    f(x, y) = 100 * (x² + y - 11)² + 100 * (x + y² - 7)²
+    f(x, y) = 300 * (x² + y - 11)² + 100 * (x + y² - 7)²
 
     Parámetros
     ----------
@@ -23,7 +23,7 @@ def evaluar_indice(coords: tuple) -> float:
         Valor del índice en la coordenada dada.
     """
     x, y = coords
-    return 100 * (x**2 + y - 11)**2 + 100 * (x + y**2 - 7)**2 + 1000
+    return 300 * (x**2 + y - 11)**2 + 100 * (x + y**2 - 7)**2 + 1000
 
 
 
